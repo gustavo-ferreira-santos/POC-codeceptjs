@@ -1,0 +1,21 @@
+{
+  "name": "codecept",
+  "version": "1.0.0",
+  "description": "POC utilizando codeceptjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx codeceptjs run --steps",
+    "test_tag": "npx codeceptjs run --grep",
+    "ios_test": "PLATFORM=iOS APP=qazandoapp.app DEVICE='iPhone 12 Pro Max' VERSION=14.5 npx codeceptjs run --steps",
+    "ios_test_tag": "PLATFORM=iOS APP=qazandoapp.app DEVICE='iPhone 12 Pro Max' VERSION=14.5 npx codeceptjs run --grep",
+    "android_test": "PLATFORM=Android APP=app-homolog.apk DEVICE='Pixel 4' VERSION=11 npx codeceptjs run --steps",
+    "android_test_tag": "PLATFORM=Android APP=app-homolog.apk DEVICE='Pixel 4' VERSION=11 npx codeceptjs run --grep"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "appium": "^1.21.0",
+    "codeceptjs": "^3.0.7",
+    "webdriverio": "^7.7.8"
+  }
+}
