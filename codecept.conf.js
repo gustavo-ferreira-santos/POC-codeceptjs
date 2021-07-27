@@ -9,6 +9,7 @@ exports.config = {
   tests: './tests/*/*_test.js',
   output: './output',
   helpers: {
+    //config do helper para execução na farm
     // Appium: {
     // app: "bs://7e789f9a1516e1f4bd47520405140198887dc98d",
     // host: "hub-cloud.browserstack.com",
@@ -19,6 +20,8 @@ exports.config = {
     // device: "Google Pixel 3",
     // os_version: '9.0'
     // }
+    
+    //config do helper para execução local
     Appium: {
       platform: process.env.PLATFORM,
       app:  `/Users/gustavosantos/Downloads/appsget/${process.env.APP}`,
